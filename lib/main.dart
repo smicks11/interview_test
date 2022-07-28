@@ -8,7 +8,6 @@ import 'routes/app_pages.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await GetStorage.init();
-  // await FlutterConfig.loadEnvVariables();
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light.copyWith(
     statusBarColor: Colors.transparent,
     statusBarBrightness: Brightness.light,
@@ -31,7 +30,6 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   
   Widget build(BuildContext context) {
-    // log(dotenv.get('PAYSTACKLIVE_KEY'));
     
     return GetMaterialApp(
         title: 'Medfestcare',
